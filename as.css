@@ -6,9 +6,14 @@
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  margin: 0;
+ 
   
   
+}
+main{
+    max-width: 1446px;
+   margin: 0;
+   
 }
 
 .header-title{
@@ -20,10 +25,10 @@
     height: 100px;
     
 }
-.first, .two  {
+.first, .two ,.three {
 border-bottom: dashed 1px slategray;
 background-image: url(assets/bg.png);
-padding: 60px;
+padding: 0px;
 margin: 0;
 
 }
@@ -38,6 +43,9 @@ margin: 0;
 
    list-style: none;
     
+    }
+    a{
+        text-decoration: none;
     }
     .container1{
         display: flex;
@@ -103,6 +111,9 @@ margin: 0;
         font-size: 18px;
         font-weight: 300px;
         color: black;
+    }
+    .twoheader{
+        text-align: center;
     }
 .secthree-title{
    text-align: center;
@@ -171,9 +182,14 @@ margin: 0;
    border: none;
    color: aliceblue;
    margin-inline: 10px;
+   margin-bottom: 20px;}
     
-
-  }
+.symbol:hover{
+    
+    color: blue;
+    background-color: aliceblue;
+}
+  
   .three{
     margin-top: 80px;
    margin-bottom: 80px;
@@ -186,8 +202,9 @@ margin: 0;
     justify-content: space-evenly;
     margin-left: 140px;
     margin-right: 140px;
+    gap: 30px;
     
-
+    
    
 }
 .three-content{
@@ -205,7 +222,7 @@ margin: 0;
     
  }
 .roww{
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 13px;
     text-align: left;
     
@@ -214,6 +231,10 @@ margin: 0;
     font-size: 25px;
     font-weight: 700;
 
+}
+.three{
+    margin: 0%;
+    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(235, 192, 161));
 }
 .writte{
     font-size: 10px;
@@ -230,14 +251,14 @@ margin: 0;
 }
 
 .row{
-    background-color: aliceblue;
+    background-color:white;
   border-radius: 13px;
   text-align: left;
   font-size:12 px;
   font-weight: 700;
   
-  
-  }
+   }
+
 .r{
     border-radius: 13px;
      }
@@ -247,7 +268,7 @@ margin: 0;
   }
 .View{
     text-align: center;
-    margin: 30px 42%;
+    margin: 90px 42%;
     height: 50px;
     width: 200px;
     border-radius: 14px;
@@ -255,34 +276,126 @@ margin: 0;
     color: aliceblue;
 }
 .date{
-    font-size:12 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:14px;
   font-weight: 700;
+  width: 170px;
+  height: 45px;
+  background-color: aqua;
+  border-radius: 20px;
+ 
+ 
 }
+.foter-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 90px 30px;
+   
+}
+.foter-title-img{
+    display: flex;
+}
+.foter-des{
+    width: 399px;
+    height: 100px;
+    
+}
+.foter-logo{
+   width: 80px;
+   height: 80px;
+   margin: 15px;
+}
+.foter-title{
+    color: aliceblue;
+}
+.foter-des{
+    font-size: 15px;
+    color: rgb(242, 239, 239);
+    font-weight: 400;
+}
+.icon-image{
+    display: flex;
+    gap: 10px;
+}
+.fotter-section{
+    margin:0;
+    padding:0;
+    background-color: rgb(1, 172, 253);
+    height: 100%;
+    
+    
+   
+}
+.list-style{
+    list-style: none;
+   
+}
+.mobile-logo{
+    display: none;
+}
+  
+
 @media  screen and (max-width: 576px) {
+
+
     .navbar {
         display: none;
     }
     .contact{
         display: none;
     }
-    .container1{
-        display: grid;
-       grid-template-columns: repeat(1,1fr);
-
+    .three-content{
+        display: none;
     }
-
-
-
-
-    .container1-desc{
-
-    }
-
-
-
-}
-     
+    .mobile-logo{
+    display: inline;}
     
+    .first, .two ,.three {
+            border: none;
+        }
+
+        .container1{
+            flex-direction: column-reverse;
+            width: 400px;
+            height: auto;
+        }
+        .sectwo-container{
+            flex-direction: column;
+        }
+        .secthree-container{
+            flex-direction: column;
+            margin left:15px ;
+            margin-right: 15px;
+        }
+        .foter-container{
+
+        flex-direction: column;
+        }
+        .gridlayout{
+            
+            height:246;
+            width: 221px;
+            margin-left: 0;
+            justify-content: center;
+        }
+        
+        .row{
+            background-color:white;
+          border-radius: 13px;
+          text-align: left;
+          font-size:12 px;
+          font-weight: 700;
+        }
+        .r{
+            width: 200px;
+            height: 150px;
+        }
+        .View{
+            margin: 30%;
+        }
+ }   
     
    
     
