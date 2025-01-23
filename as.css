@@ -10,11 +10,9 @@
   
   
 }
-main{
-    max-width: 1446px;
-   margin: 0;
+
    
-}
+
 
 .header-title{
     display: flex;
@@ -167,6 +165,14 @@ margin: 0;
 
     
 }
+.but{
+    border: none;
+    color: rgb(14, 239, 130);
+    background-color: rgb(255, 247, 247);
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .twobutton{
     text-align: center;
     border: none;
@@ -305,7 +311,7 @@ margin: 0;
 .foter-logo{
    width: 80px;
    height: 80px;
-   margin: 15px;
+   margin:15px 10px 20px 2px;
 }
 .foter-title{
     color: aliceblue;
@@ -330,8 +336,19 @@ margin: 0;
 }
 .list-style{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500px;
    
+    
 }
+
+   
+a{
+    color: aliceblue;
+}
+
 .mobile-logo{
     display: none;
 }
@@ -351,9 +368,11 @@ margin: 0;
     }
     .mobile-logo{
     display: inline;}
+
     
     .first, .two ,.three {
             border: none;
+            
         }
 
         .container1{
@@ -380,6 +399,9 @@ margin: 0;
             margin-left: 0;
             justify-content: center;
         }
+        .header-title{
+            border-bottom: 2px solid chocolate;
+        }
         
         .row{
             background-color:white;
@@ -395,8 +417,16 @@ margin: 0;
         .View{
             margin: 30%;
         }
- }   
-    
+     
+       .foter-container,{
+        text-align: left;
+       } 
+     .icon-image{
+        margin-bottom: 30px;
+     }
+
    
+    
+}
     
 
