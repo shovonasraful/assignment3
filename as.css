@@ -11,14 +11,18 @@
   
 }
 
-.container1{
+.header-title{
     display: flex;
     justify-content: space-around;
-    background-image: url(assets/bg.png);
+    
+    
+    align-items: center;
+    height: 100px;
+    
 }
 .first, .two , .three{
 border-bottom: dashed 1px slategray;
-background-image: url(assets/bg.png);
+background:linear-gradient(rgb(242, 189, 139)(chocolate))url(assets/bg.png);
 padding: 60px;
    
 }
@@ -32,13 +36,70 @@ padding: 60px;
    list-style: none;
     
     }
-    .descr{
+    .container1{
         display: flex;
         gap: 30px;
        justify-content: center;
        align-items: center;
        margin-left: 80px;
        margin-right: 80px;
+    }
+    .container1-desc{
+        
+        padding:20px 10px;
+    }
+    .ami{
+        color: rgb(203, 100, 26);
+    }
+    .tumi{
+        color:rgb(20, 173, 234);
+    }
+    .container1-title{
+        font-size: 35px;
+        font-weight: 500px;
+
+    }
+    .header-title{
+        margin-top: 40px;
+    }
+    .nav1{
+        color: rgb(243, 124, 39);
+    }
+    .nav2{
+        color: rgb(26, 160, 213);
+    }
+    .nav3{
+        color: rgb(26, 241, 44);
+
+    }
+    .nav4{
+        color: rgb(62, 62, 215);
+    }
+    .contact{
+        width: 170px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 600px;
+        color: aliceblue;
+        border-radius: 10px;
+        background-color: chocolate;
+        border: none;
+
+    }
+    .enroll{
+        width: 170px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 600px;
+        color: aliceblue;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        border: none;
+    }
+    .all-small-font{
+        font-size: 18px;
+        font-weight: 300px;
+        color: black;
     }
 .twoheader{
    text-align: center;
@@ -118,27 +179,32 @@ padding: 60px;
     background-color: black;
     color: aliceblue;
 }
-@media screen and (max-width: 576px){
-    .navbar{
+@media  screen and (max-width: 576px) {
+    .navbar {
         display: none;
-        border-bottom: 4px solid;
     }
-    .descr{
+    .contact{
+        display: none;
+    }
+    .container1{
         display: grid;
-     grid-template-columns: auto;
-   
+       grid-template-columns: repeat(1,1fr);
+
     }
 
-   .three-container{display: grid;
-    grid-template-columns: auto;
-   }
-   .threedescr{
-    display: none;
-   }
-   .sectwo-container{
-    display: grid;
-    grid-template-columns: auto;
-   }
-  
-   
+
+
+
+    .container1-desc{
+
+    }
+
+
+
 }
+     
+    
+    
+   
+    
+
